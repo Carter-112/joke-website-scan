@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Daily Joke</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(45deg, orange, red);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #joke-container {
+            font-size: 2em;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+        .ad-bottom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+        }
+        iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Joke Container -->
+    <div id="joke-container">Loading your joke...</div>
+
+    <!-- Bottom Banner Ad -->
+    <div class="ad-bottom">
+        <!-- Replace this with your ad script -->
+        <iframe src="https://www.example.com/banner-ad" width="300" height="50"></iframe>
+    </div>
+
+    <script>
+        // Array of 100 jokes
+        const jokes = [
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "Why did the scarecrow win an award? He was outstanding in his field!",
+            "What do you call cheese that isn't yours? Nacho cheese.",
+            "Why did the bicycle fall over? It was two-tired!",
+            "What do you call fake spaghetti? An impasta.",
+            "Why don't eggs tell jokes? They'd crack each other up!",
+            "How do you organize a space party? You planet.",
+            "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+            "Why don't scientists trust atoms? Because they make up everything!",
+            "What do you call a bear with no teeth? A gummy bear.",
+            "Why did the math book look sad? Because it had too many problems.",
+            "Why can't you hear a pterodactyl in the bathroom? Because it has a silent P!",
+            "How does a penguin build its house? Igloos it together.",
+            "What do you call a pile of cats? A meowtain.",
+            "Why did the cookie go to the doctor? It was feeling crumbly.",
+            "Why did the stadium get hot after the game? All the fans left.",
+            "What did the ocean say to the beach? Nothing, it just waved.",
+            "Why can't your nose be 12 inches long? Because then it would be a foot.",
+            "What do you call a can opener that doesn’t work? A can’t opener.",
+            "What do you call a cow with no legs? Ground beef.",
+            "What do you call a fish with no eyes? Fsh.",
+            "Why do seagulls fly over the sea? Because if they flew over the bay, they’d be bagels.",
+            "Why did the computer go to the doctor? It had a virus.",
+            "Why don’t oysters donate to charity? Because they are shellfish.",
+            "What did the baby corn say to the mama corn? Where’s popcorn?",
+            "Why don’t skeletons ever go trick or treating? Because they have no body to go with.",
+            "Why did the tomato turn red? Because it saw the salad dressing!",
+            "What do you call a boomerang that doesn’t come back? A stick.",
+            "Why couldn’t the leopard play hide and seek? Because he was always spotted.",
+            "What did the janitor say when he jumped out of the closet? Supplies!",
+            "What do you call two birds in love? Tweethearts.",
+            "Why couldn’t the bicycle stand up by itself? It was two tired.",
+            "What do you call an alligator in a vest? An investigator.",
+            "Why did the mushroom go to the party? Because he was a fungi.",
+            "Why don’t you ever see elephants hiding in trees? Because they’re so good at it.",
+            "What do you call fake noodles? An impasta.",
+            "How do you organize a space party? You planet.",
+            "Why don’t cows have any money? Because the farmers milk them dry.",
+            "What do you call a pig that does karate? A pork chop.",
+            "What’s brown and sticky? A stick.",
+            "What do you call a dog magician? A labracadabrador.",
+            "Why are frogs so happy? They eat whatever bugs them.",
+            "Why did the bicycle collapse? It was two tired.",
+            "What do you call Batman when he skips church? Christian Bale.",
+            "Why did the math teacher bring a ladder to school? To reach new heights.",
+            "What did one wall say to the other wall? I'll meet you at the corner.",
+            "Why don't ants get sick? Because they have tiny ant-bodies.",
+            "Why did the golfer bring two pairs of pants? In case he got a hole in one.",
+            "Why don't zombies eat clowns? Because they taste funny.",
+            "Why did the coffee file a police report? It got mugged.",
+            "Why did the kid throw a clock out the window? He wanted to see time fly.",
+            "What did the traffic light say to the car? Don't look! I'm about to change.",
+            "Why did the man put his money in the blender? He wanted to make some liquid assets.",
+            "Why was the broom late for work? It swept in.",
+            "Why did the student eat his homework? Because the teacher said it was a piece of cake.",
+            "What do you call a cold dog? A chili dog.",
+            "What do you get when you cross a snowman and a dog? Frostbite.",
+            "Why did the orange stop rolling down the hill? It ran out of juice.",
+            "Why don’t some couples go to the gym? Because some relationships don’t work out.",
+            "Why was the math book unhappy? It had too many problems.",
+            "What’s orange and sounds like a parrot? A carrot.",
+            "Why do bees have sticky hair? Because they use honeycombs.",
+            "What do you call a funny mountain? Hill-arious.",
+            "Why don’t mountains get cold? They wear snowcaps.",
+            "Why do golfers bring an extra pair of socks? In case they get a hole in one."
+        ];
+
+        // Show a random joke
+        const jokeContainer = document.getElementById("joke-container");
+        const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+        jokeContainer.textContent = randomJoke;
+    </script>
+</body>
+</html>
